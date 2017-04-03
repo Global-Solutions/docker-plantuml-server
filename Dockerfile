@@ -10,4 +10,5 @@ RUN rm -r /usr/local/tomcat/webapps/* && \
     cd plantuml-server && mvn package && \
     mv target/plantuml.war /usr/local/tomcat/webapps && \
     cd $PWD && rm /tmp/work -rf && \
-    apk del .deps
+    apk del .deps && \
+    rm /root/.m2 -rf
