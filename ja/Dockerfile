@@ -9,7 +9,7 @@ COPY fonts.conf /root/.config/fontconfig/
 
 RUN apk --update add --no-cache --virtual .deps ca-certificates wget openssl && \
     update-ca-certificates && \
-    mkdir /tmp/work -p && \
+    mkdir /tmp/work -p && cd /tmp/work && \
     wget http://ipafont.ipa.go.jp/old/ipafont/ipag00303.php -O ipag00303.zip && \
     unzip ipag00303.zip && \
     mkdir /root/.local/share/fonts -p && \
