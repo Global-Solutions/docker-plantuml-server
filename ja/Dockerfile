@@ -14,6 +14,6 @@ RUN apk --update add --no-cache --virtual .deps ca-certificates wget openssl && 
     unzip ipag00303.zip && \
     mkdir /root/.local/share/fonts -p && \
     mv ipag00303/ipag.ttf /root/.local/share/fonts && \
-    cd $OLDPWD && mv /tmp/work/IPA_Font_License_Agreement_v1.0.txt . && \
+    cd $OLDPWD && mv /tmp/work/ipag00303/IPA_Font_License_Agreement_v1.0.txt . && \
     rm /tmp/work -rf && \
     apk del .deps
