@@ -1,4 +1,4 @@
-FROM tomcat:9.0.0-jre8-alpine
+FROM tomcat:9.0.5-jre8-alpine
 
 MAINTAINER Global-solutions
 ENV VER=v1.2018.1
