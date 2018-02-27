@@ -1,4 +1,4 @@
-FROM gsol/plantuml-server
+FROM gsol/plantuml-server:v1.2018.1
 
 MAINTAINER Global-solutions
 
