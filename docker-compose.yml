@@ -1,0 +1,9 @@
+version: '2'
+services:
+  plantuml:
+    restart: always
+    image: gsol/plantuml-server:v1.2018.1-ja
+    ports:
+      - "8080:8080"
+    devices:
+      - "/dev/random:/dev/random"
